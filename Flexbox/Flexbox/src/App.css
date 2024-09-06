@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 90px;
+  height: 100vh;
+  padding:20px;
+}
+.item1{
+  background-color: aqua;
+}
+.item2{
+  background-color: blueviolet;
+}
+.item3{
+  background-color: chartreuse;
+}
+body {
+  object-fit: fill;
+  height: 1020px;
+  width: 100%;
+  background-image: url("https://moneyinvest.com.br/wp-content/uploads/2023/10/Tigrinho.jpg-1000x600.webp");
+}
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+    text-align: center;
+  }
+  .item1{
+    background-color: rgb(229, 255, 0);
+    width: 600px;
+
+  }
+  .item2{
+    background-color: rgb(132, 0, 255);
+    width: 600px;
+
+  }
+  .item3{
+    background-color: rgb(0, 26, 255);
+    width: 600px;
+
+  }
+}
