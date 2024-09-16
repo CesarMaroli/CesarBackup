@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'expo-router';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 
 const TaskListApp = () => {
@@ -29,6 +30,7 @@ const TaskListApp = () => {
 
   return (
     <View style={styles.container}>
+      <Link href="/" style={styles.homeButton}>HOME</Link>
       <FlatList
         data={tasks}
         renderItem={renderItem}
@@ -40,6 +42,15 @@ const TaskListApp = () => {
 };
 
 const styles = StyleSheet.create({
+  homeButton: {
+    backgroundColor: '#ff0000',
+    color: '#fff',
+    padding: 10,
+    borderRadius: 5,
+    textAlign: 'center',
+    fontSize: 18,
+    width: 200,
+  },
   container: {
     flex: 1,
     justifyContent: 'center',

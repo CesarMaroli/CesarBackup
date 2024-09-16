@@ -1,5 +1,8 @@
+import { Link } from 'expo-router';
 import React, { useState } from 'react';
+import { Link } from 'expo-router';
 import { View, Text, TextInput, Button, StyleSheet, Image, Modal, Pressable } from 'react-native';
+
 
 const App = () => {
   const [balance, setBalance] = useState(7320.92);
@@ -33,11 +36,13 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+      <Link href="/" style={styles.homeButton}>HOME</Link>
       <View style={styles.balanceContainer}>
         <Image source={require('./santander.png')} style={styles.logo} resizeMode="contain" />
         <Text style={styles.balanceText}>Saldo Atual:</Text>
         <Text style={styles.balanceAmount}>R$ {balance.toFixed(2)}</Text>
       </View>
+      
 
       <View style={styles.inputContainer}>
         <TextInput
@@ -106,6 +111,15 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
+    homeButton: {
+      backgroundColor: '#ff0000',
+      color: '#fff',
+      padding: 10,
+      borderRadius: 5,
+      textAlign: 'center',
+      fontSize: 18,
+      width: 200,
+    },
   container: {
     flex: 1,
     justifyContent: 'center',

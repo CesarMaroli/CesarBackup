@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'expo-router';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 
 export default function CalculatorApp() {
@@ -41,6 +42,7 @@ export default function CalculatorApp() {
 
   return (
     <View style={styles.container}>
+      <Link href="/" style={styles.homeButton}>HOME</Link>
       <Text style={styles.title}>Calculadora Simples</Text>
       <TextInput
         style={styles.input}
@@ -78,6 +80,15 @@ export default function CalculatorApp() {
 }
 
 const styles = StyleSheet.create({
+  homeButton: {
+    backgroundColor: '#ff0000',
+    color: '#fff',
+    padding: 10,
+    borderRadius: 5,
+    textAlign: 'center',
+    fontSize: 18,
+    width: 200,
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
