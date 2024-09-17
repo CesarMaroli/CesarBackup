@@ -15,6 +15,7 @@ const App = () => {
         source={require('./img/Nike-Logo.png')}
         style={styles.logo}
         resizeMode="contain"
+        href="/"
       />
     </View>
   );

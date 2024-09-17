@@ -1,6 +1,5 @@
 import { Link } from 'expo-router';
 import React, { useState } from 'react';
-import { Link } from 'expo-router';
 import { View, Text, TextInput, Button, StyleSheet, Image, Modal, Pressable } from 'react-native';
 
 

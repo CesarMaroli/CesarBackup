@@ -17,6 +17,9 @@ export default function Page() {
       <Link id="screen" href="./Screen" style={styles.screen}>
         Screen
       </Link>
+      <Link id="screen" href="./Profile/perfil" style={styles.Pokedex}>
+        Perfil
+      </Link>
     </View>
   );
 }
