@@ -17,7 +17,7 @@ export default function Page() {
       <Link id="screen" href="./Screen" style={styles.screen}>
         Screen
       </Link>
-      <Link id="screen" href="./Profile/perfil" style={styles.Pokedex}>
+      <Link id="screen" href="./Profile/perfil" style={styles.perfil}>
         Perfil
       </Link>
     </View>
@@ -70,4 +70,14 @@ const styles = StyleSheet.create({
     width: 200,
     textAlign: 'center',
   },
+  perfil: {
+    backgroundColor: '#FF5722',
+    color: '#fff',
+    padding: 10,
+    marginVertical: 10,
+    fontSize: 18,
+    borderRadius: 5,
+    width: 200,
+    textAlign: 'center',
+  }
 });

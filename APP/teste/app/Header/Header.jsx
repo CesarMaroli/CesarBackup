@@ -1,10 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Link } from 'expo-router';
 
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
-      <Text style={styles.headerText}>César de Almeida Maroli</Text>
+      <Link href="/Profile/perfil" style={styles.headerText}>
+        César de Almeida Maroli
+      </Link>
     </View>
   );
 };

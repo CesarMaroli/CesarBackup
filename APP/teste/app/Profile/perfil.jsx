@@ -11,11 +11,13 @@ export default function Perfil() {
         source={{ uri: 'https://yt3.googleusercontent.com/ytc/AIdro_leqsTnV5cYaIUyl7hB6nLg1K5TSvI-cfiKIbaZKhlNtu8=s160-c-k-c0x00ffffff-no-rj' }}
         style={styles.profileImage}
       />
+      <Text style={styles.title} >Sobre Mim</Text>
+      <Text style={styles.paragrafo}>Seja bem-vindo ao meu site! Aqui você vai encontrar uma seleção dos meus filmes favoritos, além das músicas que eu mais curto. Sinta-se à vontade para explorar e conhecer um pouco mais sobre meus gostos e interesses.</Text>
       <View style={styles.buttonContainer}>
-        <Link href="./" style={styles.button}>
+        <Link href="/Profile/FIlmes" style={styles.button}>
           <Text style={styles.buttonText}>Filmes</Text>
         </Link>
-        <Link href="./" style={styles.button}>
+        <Link href="/Profile/Musicas" style={styles.button}>
           <Text style={styles.buttonText}>Músicas</Text>
         </Link>
       </View>
@@ -50,5 +52,16 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 18,
     fontWeight: 'bold',
+    textAlign: 'center',
   },
+  paragrafo: {
+    width: 300,
+    marginTop: 10,
+  },
+  title: {
+    marginTop: 10,
+    fontSize: 18,
+    fontWeight: 'bold',
+  }
+
 });
