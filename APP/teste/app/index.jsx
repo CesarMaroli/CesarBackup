@@ -23,6 +23,9 @@ export default function Page() {
       <Link id="screen" href="./Pokedex" style={styles.perfil}>
         Pokedex
       </Link>
+      <Link id="screen" href="./Ifome" style={styles.perfil}>
+        Ifome
+      </Link>
     </View>
   );
 }
