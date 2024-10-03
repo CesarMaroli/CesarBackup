@@ -26,6 +26,9 @@ export default function Page() {
       <Link id="screen" href="./Ifome" style={styles.perfil}>
         Ifome
       </Link>
+      <Link id="screen" href="./Celular" style={styles.perfil}>
+        Celular
+      </Link>
     </View>
   );
 }
